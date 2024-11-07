@@ -112,21 +112,43 @@ header nav ul li a:hover {
     transform: scale(1.05) rotate(3deg);
 }
 
-.section-3 {  background-color: #333;
-width: 1160px;
-height: auto;
-display: flex;
-justify-content: space-between;
-    align-items: center;}
+.section-3 {  
+    background-color: #f4f4f4;
+    width: 950;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
 
-.cajasection3 { background-color: #f4f4f4;
-     width: 300px;
+
+.cajasection3 { 
+
+display: flex;
+background-color: #f4f4f4;
+width: 180px;
 height: auto;
 margin: 30px;
 display: flex;
-flex-direction: column;}
+flex-direction: column;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
-.sizeImagen { width: 300px;}
+}
+
+
+.sizeImagen {
+    padding: 10px;
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 
 /* Pie de página */
@@ -137,6 +159,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     border-radius: 5px;
+    
 }
 
 footer h3, footer h2 {
@@ -268,6 +291,7 @@ footer nav ul li a:hover {
     }
 }
 
+
 @media (max-width: 768px) {
     /* Ocultar el menú   y mostrar el menú hamburguesa */
     .nav-links {
@@ -313,3 +337,13 @@ footer nav ul li a:hover {
 
 
 }
+@media (max-width: 768px) {
+    .section-3 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+
