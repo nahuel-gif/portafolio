@@ -17,3 +17,8 @@ window.onload = function() {
         welcomeMessage.style.display = "none";
     };
 };
+
+function toggleMenu() {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
+};

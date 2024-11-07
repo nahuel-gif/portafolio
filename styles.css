@@ -20,6 +20,10 @@ body {
     padding: 20px;
 }
 
+#logohorizontal { width: 260px;
+}
+
+
 /* Encabezado */
 header {
     display: flex;
@@ -31,6 +35,8 @@ header {
 }
 
 header a {
+    margin-left: 5px;
+    height: 40px;
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
@@ -46,6 +52,7 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     color: #fff;
+    font-size: 18px;
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 5px;
@@ -104,6 +111,23 @@ header nav ul li a:hover {
 .acerca-imagen img:hover, .section-2 img:hover {
     transform: scale(1.05) rotate(3deg);
 }
+
+.section-3 {  background-color: #333;
+width: 1160px;
+height: auto;
+display: flex;
+justify-content: space-between;
+    align-items: center;}
+
+.cajasection3 { background-color: #f4f4f4;
+     width: 300px;
+height: auto;
+margin: 30px;
+display: flex;
+flex-direction: column;}
+
+.sizeImagen { width: 300px;}
+
 
 /* Pie de página */
 footer {
@@ -223,4 +247,69 @@ footer nav ul li a:hover {
 
 .welcome-message button:hover {
     background-color: #0056b3;
+}
+
+/* Estilos base del menú */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-hamburguesa {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) { 
+
+    nav { font-size: 12px;
+        padding: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ocultar el menú   y mostrar el menú hamburguesa */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 85px;   /* Ajusta según el tamaño del header */
+        left: 5%;
+        width: 80%;
+        background-color: #333;
+        padding: 10px 0;
+        z-index: 9999999;
+        
+    
+    }
+    header { justify-content: space-around;
+        flex-direction: row-reverse;}
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-links.active { width: 60%;
+        display: flex;
+
+
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .nav-links ul li a {
+        color: #fff;
+        padding: 10px 0;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .section-1{ flex-direction: column-reverse; }
+
+
 }
